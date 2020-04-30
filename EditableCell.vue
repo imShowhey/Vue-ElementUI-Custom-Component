@@ -1,3 +1,15 @@
+//在父组件中使用
+// <el-table-column label="昵称" width="200">
+//     <editable-cell
+//     slot-scope="{row}"
+//     :can-edit="editModeEnabled"
+//     @inputComplate="inputComplate"
+//     v-model="row.PetName"
+//     >
+//         <span slot="content">{{row.PetName}}</span>
+//     </editable-cell>
+// </el-table-column>
+
 <template>
   <div @dblclick="onFielddblClick" class="edit-cell">
     <el-tooltip
